@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { mg } from '../common/mediaQueries.js';
+
 const Footer = () => {
     
     return (
@@ -18,4 +20,5 @@ text-align: center;
 font-size:12px;
 background-color: white;
 padding: 20px;
+
 `;

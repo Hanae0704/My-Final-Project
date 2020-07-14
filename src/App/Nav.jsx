@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { NavLink } from 'react-router-dom';
+
+import { mg } from '../common/mediaQueries.js';
+
 const Nav = () => {
 
 return (
 <NavStyled>
 <div className='nested-wrapper'>
-        <a href="/">HOME</a>
-        <a href="/appointment">APPOINTMENT</a>
-        <a href="/about">ABOUT</a>
-        <a href="/contact">CONTACT</a> 
+        <NavLink to="/"exact>HOME</NavLink>
+        <NavLink to="/appointment">APPOINTMENT</NavLink>
+        <NavLink to="/about">ABOUT</NavLink>
+        <NavLink to="/contact">CONTACT</NavLink> 
 </div>
 </NavStyled>
 )
@@ -19,21 +23,41 @@ return (
 export default Nav;
 
 const NavStyled = styled.nav`
-        margin-left: 50px;
+
+        @media ${mg.phone} {
+            
+        }
+
+        @media ${mg.tablet} {
+            /*width: 100px;*/
+            margin-left: 200px;
+        }
+            
+        @media ${mg.desktop} {
+            /*width: 150px;*/
+            margin-left: 350px;
+        }
 a {
-        text-align: center;
-        line-height: 20px;
         font-size: 20px;
         color: white;
+
+        text-align: center;
+        line-height: 10px;
+        
+        vertical-align: center;
 
         text-decoration: underline;
 
         width: 120px;
-        margin-right: 5px;
-        margin-left: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
 
         &:hover {
             background-color: lightblue;
+        }
+
+        &:active {
+            background-color: gray;
         }
 }
 `;

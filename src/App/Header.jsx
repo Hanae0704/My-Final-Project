@@ -8,6 +8,7 @@ import {
     faPaw,
 } from '@fortawesome/free-solid-svg-icons';
 
+import { mg } from '../common/mediaQueries.js';
 
 const Header = () => {
     
@@ -31,9 +32,19 @@ color: white;
 font-size: 28px;
 padding: 20px 0px 0px 10px;
 
+
 .left-container {
-    display: flex;
-    justify-content: center;  
+    text-align: center;
+
+    @media ${mg.tablet} {
+        display: flex;
+        justify-content: center;  
+    }   
+
+    @media ${mg.desktop} {
+        display: flex;
+        justify-content: center;  
+    }
 }
 
 .logo {
