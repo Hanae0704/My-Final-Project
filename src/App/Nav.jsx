@@ -24,9 +24,7 @@ export default Nav;
 
 const NavStyled = styled.nav`
 
-        @media ${mg.phone} {
-            
-        }
+        
 
         @media ${mg.tablet} {
             /*width: 100px;*/
@@ -38,7 +36,7 @@ const NavStyled = styled.nav`
             margin-left: 350px;
         }
 a {
-        font-size: 20px;
+        font-size: 15px;
         color: white;
 
         text-align: center;
@@ -51,6 +49,16 @@ a {
         width: 120px;
         margin-right: 10px;
         margin-left: 10px;
+
+        @media ${mg.tablet} {
+            /*width: 100px;*/
+            font-size: 20px;
+        }
+            
+        @media ${mg.desktop} {
+            /*width: 150px;*/
+            font-size: 20px;
+        }
 
         &:hover {
             background-color: lightblue;

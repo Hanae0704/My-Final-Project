@@ -29,8 +29,6 @@ const AppStyled = styled.div`
     background-color: skyblue;
     width: 100%;
     margin: auto;
-    /*border: solid 1px #333;*/
-    /*padding: 20px 100px 30% 100px;*/
 
     .nested-wrapper {
     max-width:1200px;
