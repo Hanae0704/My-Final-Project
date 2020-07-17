@@ -16,7 +16,7 @@ const Header = () => {
         <HeaderStyled>
             <div className="left-container">
             <div className='logo'><FontAwesomeIcon icon={ faPaw }/></div>
-            Blue Pooch
+            <div className='company-name'>Blue Pooch</div>
             <Nav/>
             </div>
             
@@ -29,12 +29,24 @@ export default Header;
 const HeaderStyled = styled.header`
 
 color: white;
-font-size: 28px;
+
 padding: 20px 0px 0px 10px;
 
+@font-face {font-family: 'Brusher';
+            src: url(/font/Brusher-Regular.ttf);}
+
+.company-name {
+    font-family: Brusher;
+    font-size: 30px;
+    }
 
 .left-container {
-    text-align: center;
+
+    text-align: center; 
+    
+    /*@media ${mg.phone} {
+      text-align: center; 
+    }  */
 
     @media ${mg.tablet} {
         display: flex;
@@ -48,7 +60,11 @@ padding: 20px 0px 0px 10px;
 }
 
 .logo {
-    margin-right: 10px;
+    font-size: 28px;
+
+    @media ${mg.phone} {
+           margin-right: 10px; 
+    }   
 }
 
 `;

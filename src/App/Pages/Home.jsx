@@ -22,18 +22,35 @@ const Home = () => {
 export default Home;
 
 const HomeStyled = styled.div`
-    h1 {
+
+        h1 {
         color: skyblue;
         background-color: white;
-        font-size: 45px;
+        font-size: 25px;
         padding: 100px;
+        }
+
+        h2 {
+            padding: 0px 50px 0px 50px;
+        }
+
+        h3 {
+            padding: 0px 50px 0px 50px;
+        }
+
+@media(min-width:500px) {
+    
+        h1 {
+        font-size: 45px;
+        }
+
+        h2 {
+            padding: 0px 100px 0px 100px;
+        }
+
+        h3 {
+            padding: 0px 100px 0px 100px;
+        }
     }
 
-    h2 {
-        padding: 0px 100px 0px 100px;
-    }
-
-    h3 {
-        padding: 0px 100px 0px 100px;
-    }
 `;
