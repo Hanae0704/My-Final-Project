@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+/* Component ---------------------------*/
+import Tabbed from './Tabbed/Tabbed.jsx';
 
 const Home = () => {
 
@@ -11,9 +13,8 @@ const Home = () => {
             <title>Home :: Blue Pooch</title>
             </Helmet>
             <h1>Welcome to Blue Pooch!</h1>
-            <h2>We specialize in Japanese Style Dog Grooming in West LA!</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <div className="subtitle"><h2>We specialize in Japanese Style Dog Grooming in West LA!</h2></div>
+            <div className="tab"><Tabbed/></div>
             &nbsp;&nbsp;
         </HomeStyled>
     );
@@ -23,15 +24,16 @@ export default Home;
 
 const HomeStyled = styled.div`
 
+        .subtitle {
+            color: white;
+            padding: 0px 20px 5px 20px;
+        }
+
         h1 {
         color: skyblue;
         background-color: white;
         font-size: 25px;
         padding: 100px;
-        }
-
-        h2 {
-            padding: 0px 50px 0px 50px;
         }
 
         h3 {
@@ -40,16 +42,28 @@ const HomeStyled = styled.div`
 
 @media(min-width:500px) {
     
+        .tab {
+            padding: 0px 50px 0px 50px;
+        }
+
         h1 {
         font-size: 45px;
         }
 
-        h2 {
-            padding: 0px 100px 0px 100px;
+    }
+
+    @media(min-width: 1100px) {
+
+        .tab {
+            text-align: left;
+            padding: 50px;
         }
 
-        h3 {
-            padding: 0px 100px 0px 100px;
+        .subtitle {
+            text-align: right;
+            margin-bottom: -100px;
+            margin-right: 50px;
+            padding: 0px;
         }
     }
 

@@ -53,7 +53,7 @@ return (
         <div className="links">
         <NavLink to="/"exact>HOME</NavLink>
         <NavLink to="/appointment">APPOINTMENT</NavLink>
-        <NavLink to="/about">ABOUT</NavLink>
+        <NavLink to="/services">SERVICES</NavLink>
         <NavLink to="/contact">CONTACT</NavLink> 
         </div>
         }
@@ -69,12 +69,12 @@ const NavStyled = styled.nav`
 
         @media ${mg.tablet} {
             /*width: 100px;*/
-            margin-left: 180px;
+            margin-left: 150px;
         }
             
         @media ${mg.desktop} {
             /*width: 150px;*/
-            margin-left: 330px;
+            margin-left: 300px;
         }
 
         .hamburger {
