@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mg } from '../../../common/mediaQueries.js';
 
 const Section = ({chosenTab}) => {
 
@@ -27,7 +28,7 @@ const SectionStyled = styled.div`
         color: gray;
     }
 
-    @media(min-width: 500px) {
+    @media ${mg.phone} {
 
     img {
         width: 360px;   
@@ -35,14 +36,14 @@ const SectionStyled = styled.div`
     }
     }
 
-    @media(min-width: 850px) {
+    @media ${mg.tablet} {
 
         img {
             width: auto;   
         }
     }
 
-    @media(min-width: 1000px) {
+    @media ${mg.desktop} {
 
         .section {
             display: flex;

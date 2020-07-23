@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
+import { mg } from '../../common/mediaQueries.js';
 
 /* Component ---------------------------*/
 import Tabbed from './Tabbed/Tabbed.jsx';
@@ -40,7 +41,7 @@ const HomeStyled = styled.div`
             padding: 0px 50px 0px 50px;
         }
 
-@media(min-width:500px) {
+    @media ${mg.phone} {
     
         .tab {
             padding: 0px 50px 0px 50px;
@@ -52,7 +53,7 @@ const HomeStyled = styled.div`
 
     }
 
-    @media(min-width: 1100px) {
+    @media ${mg.large} {
 
         .tab {
             text-align: left;

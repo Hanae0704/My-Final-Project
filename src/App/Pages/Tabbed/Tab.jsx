@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mg } from '../../../common/mediaQueries.js';
 
 const Tab = ({tabItem, chosenTabset}) => {
 
@@ -32,7 +33,7 @@ const TabStyled = styled.div`
     margin: 0px 5px 0px 5px;
 
     
-    @media(min-width:500px) {
+    @media ${mg.phone} {
 
     display: inline-block;
 
