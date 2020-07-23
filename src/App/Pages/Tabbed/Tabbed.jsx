@@ -10,7 +10,7 @@ import { tabItems } from './tabItems.js';
 
 const Tabbed = () => {
 
-    const [chosenTab, chosenTabset] = useState(tabItems[1]);
+    const [chosenTab, chosenTabset] = useState(tabItems[0]);
 
     console.log('chosenTab', chosenTab);
 
