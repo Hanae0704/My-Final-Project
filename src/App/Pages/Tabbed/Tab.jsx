@@ -2,15 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { mg } from '../../../common/mediaQueries.js';
 
-const Tab = ({tabItem, chosenTabset}) => {
+const Tab = ({tabItem, chosenTabset, chosenTab}) => {
 
     const handleClick = () => {
         chosenTabset(tabItem);
     }
+    
+    const theClassName = (tabItem.title === chosenTab.title) ? 'Tab active':'Tab';
 
     return (
-        <TabStyled className='Tab'
-                   onClick={ handleClick }>
+        <TabStyled 
+        className= { theClassName }
+        onClick={ handleClick }>
 
             { tabItem.title }
         </TabStyled>
@@ -23,7 +26,8 @@ const TabStyled = styled.div`
 
     display: inline-block;
 
-    background-color: white;
+    background-color: #cfdfe4;
+
     width: 70px;
     line-height: 30px;
     border-radius: 10px 10px 0px 0px;
@@ -35,16 +39,14 @@ const TabStyled = styled.div`
     
     @media ${mg.phone} {
 
-    display: inline-block;
-
-    background-color: white;
     width: 90px;
     line-height: 40px;
-    border-radius: 10px 10px 0px 0px;
-    text-align: center;
+
     font-size: 15px;
 
-    margin: 0px 5px 0px 5px;
+    }
 
+    &.active {
+        background-color: white;
     }
 `;

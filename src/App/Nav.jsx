@@ -97,7 +97,7 @@ const NavStyled = styled.nav`
             display: none;
         }
     }
-a {
+    a {
         font-size: 15px;
         color: white;
 

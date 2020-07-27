@@ -5,6 +5,7 @@ import { mg } from '../../common/mediaQueries.js';
 
 /* Component ---------------------------*/
 import Tabbed from './Tabbed/Tabbed.jsx';
+import Body from './Body/Body.jsx';
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
             <h1>Welcome to Blue Pooch!</h1>
             <div className="subtitle"><h2>We specialize in Japanese Style Dog Grooming in West LA!</h2></div>
             <div className="tab"><Tabbed/></div>
+            <Body/>
             &nbsp;&nbsp;
         </HomeStyled>
     );
@@ -24,6 +26,10 @@ const Home = () => {
 export default Home;
 
 const HomeStyled = styled.div`
+
+        .tab {
+            padding: 0px 0px 20px 0px;
+        }
 
         .subtitle {
             color: white;
@@ -44,7 +50,7 @@ const HomeStyled = styled.div`
     @media ${mg.phone} {
     
         .tab {
-            padding: 0px 50px 0px 50px;
+            padding: 0px 50px 20px 50px;
         }
 
         h1 {
@@ -57,7 +63,7 @@ const HomeStyled = styled.div`
 
         .tab {
             text-align: left;
-            padding: 50px;
+            padding: 50px 50px 20px 50px;
         }
 
         .subtitle {
