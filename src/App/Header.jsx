@@ -32,12 +32,12 @@ color: white;
 
 padding: 20px 0px 0px 10px;
 
-@font-face {font-family: 'Brusher';
-            src: url(/font/Brusher-Regular.ttf);}
 
 .company-name {
-    font-family: Brusher;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: milk-script, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     }
 
 .left-container {

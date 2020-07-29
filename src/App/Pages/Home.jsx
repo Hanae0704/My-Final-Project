@@ -15,7 +15,7 @@ const Home = () => {
             <title>Home :: Blue Pooch</title>
             </Helmet>
             <h1>Welcome to Blue Pooch!</h1>
-            <div className="subtitle"><h2>We specialize in Japanese Style Dog Grooming in West LA!</h2></div>
+            <div className="subtitle">We specialize in Japanese Style Dog Grooming in West LA!</div>
             <div className="tab"><Tabbed/></div>
             <Body/>
             &nbsp;&nbsp;
@@ -32,15 +32,20 @@ const HomeStyled = styled.div`
         }
 
         .subtitle {
+            font-size: 24px;
             color: white;
             padding: 0px 20px 5px 20px;
+
+            font-family: futura-pt, sans-serif;
+            font-weight: 300;
+            font-style: normal;
         }
 
         h1 {
         color: skyblue;
         background-color: white;
         font-size: 25px;
-        padding: 100px;
+        padding: 200px;
         }
 
         h3 {
@@ -68,7 +73,7 @@ const HomeStyled = styled.div`
 
         .subtitle {
             text-align: right;
-            margin-bottom: -100px;
+            margin-bottom: -80px;
             margin-right: 50px;
             padding: 0px;
         }

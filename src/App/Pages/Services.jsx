@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+import ServicesContainer from './Services/ServicesContainer.jsx';
+
 const Services = () => {
 
     return (
@@ -9,7 +11,7 @@ const Services = () => {
             <Helmet>
                 <title>Services :: Blue Pooch</title>
             </Helmet>
-            <h1>SERVICES</h1>
+            <ServicesContainer/>
         </ServicesStyled>
     );
 }

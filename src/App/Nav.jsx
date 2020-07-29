@@ -98,6 +98,10 @@ const NavStyled = styled.nav`
         }
     }
     a {
+        font-family: futura-pt, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                
         font-size: 15px;
         color: white;
 
@@ -105,8 +109,6 @@ const NavStyled = styled.nav`
         line-height: 10px;
         
         vertical-align: bottom;
-
-        text-decoration: underline;
 
         width: 120px;
         margin-right: 10px;

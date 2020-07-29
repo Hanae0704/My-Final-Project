@@ -17,6 +17,7 @@ const Section = ({chosenTab}) => {
 export default Section;
 
 const SectionStyled = styled.div`
+
     background-color: white;
     padding: 20px;
 
@@ -26,6 +27,9 @@ const SectionStyled = styled.div`
 
     .paragraphs {
         color: gray;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-style: normal;
     }
 
     @media ${mg.phone} {

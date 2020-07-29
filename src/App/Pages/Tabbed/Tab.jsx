@@ -24,6 +24,9 @@ export default Tab;
 
 const TabStyled = styled.div`
 
+    font-size: 12px;
+    color: gray;
+
     display: inline-block;
 
     background-color: #cfdfe4;
@@ -32,7 +35,6 @@ const TabStyled = styled.div`
     line-height: 30px;
     border-radius: 10px 10px 0px 0px;
     text-align: center;
-    font-size: 12px;
 
     margin: 0px 5px 0px 5px;
 

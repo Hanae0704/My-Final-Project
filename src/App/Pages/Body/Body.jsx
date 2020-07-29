@@ -35,5 +35,8 @@ const BodyStyled = styled.div`
 
     .column1 {
         flex-wrap: wrap;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-style: normal;
     }
 `;
