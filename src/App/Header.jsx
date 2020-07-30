@@ -43,10 +43,6 @@ padding: 20px 0px 0px 10px;
 
     text-align: center; 
     
-    /*@media ${mg.phone} {
-      text-align: center; 
-    }  */
-
     @media ${mg.tablet} {
         display: flex;
         justify-content: center;  
