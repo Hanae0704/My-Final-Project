@@ -32,7 +32,6 @@ color: white;
 
 padding: 20px 0px 0px 10px;
 
-
 .company-name {
     font-size: 25px;
     font-family: milk-script, sans-serif;

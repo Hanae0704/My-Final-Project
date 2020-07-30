@@ -34,7 +34,7 @@ const HomeStyled = styled.div`
         .subtitle {
             font-size: 24px;
             color: white;
-            padding: 0px 20px 5px 20px;
+            padding: 0px 30px 20px 30px;
 
             font-family: futura-pt, sans-serif;
             font-weight: 300;
@@ -45,7 +45,7 @@ const HomeStyled = styled.div`
         color: skyblue;
         background-color: white;
         font-size: 25px;
-        padding: 200px;
+        padding: 100px;
         }
 
         h3 {

@@ -19,7 +19,8 @@ display: inline-block;
 padding: 0px 20px 0px 20px;
 
 img {
-    width: 200px;
+    margin-top: 20px;
+    width: 100px;
 }
 
 .description {
