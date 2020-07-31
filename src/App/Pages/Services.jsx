@@ -20,6 +20,4 @@ export default Services;
 
 const ServicesStyled = styled.div`
 
-padding: 20px;
-    
 `;

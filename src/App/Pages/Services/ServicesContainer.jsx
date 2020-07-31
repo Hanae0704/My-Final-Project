@@ -12,13 +12,16 @@ const ServicesContainer = () => {
 
     const [currCategory, currCategorySet] = useState(services.categories[1]);
 
+    // console.log('currCategory', currCategory);
+
     return (
         <ServicesContainerStyled className='ServicesContainer'>
-            <FilterNav
-            services={services} currCategory={currCategory}/>
-            
-            <Gallery
-            services={services} currCategory={currCategory}/>
+            <FilterNav 
+            services={services} 
+            currCategory={currCategory} 
+            currCategorySet={currCategorySet}/>
+
+            <Gallery services={services} currCategory={currCategory}/>
         </ServicesContainerStyled>
     );
 }

@@ -130,8 +130,8 @@ const NavStyled = styled.nav`
             background-color: lightblue;
         }
 
-        &:active {
-            background-color: gray;
-        }
+        /* &.active {
+            background-color: lightblue;
+        } */
 }
 `;
