@@ -67,6 +67,8 @@ export default Nav;
 
 const NavStyled = styled.nav`
 
+       
+
         @media ${mg.tablet} {
             /*width: 100px;*/
             margin-left: 150px;
@@ -82,7 +84,6 @@ const NavStyled = styled.nav`
         right: 20px;
         top: 20px;
         
-
         cursor: pointer;
 
         svg {
@@ -97,7 +98,9 @@ const NavStyled = styled.nav`
             display: none;
         }
     }
+
     a {
+
         font-family: futura-pt, sans-serif;
                 font-weight: 300;
                 font-style: normal;
