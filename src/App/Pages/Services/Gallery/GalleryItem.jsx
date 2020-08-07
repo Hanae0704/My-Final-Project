@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Lightbox from './Lightbox.jsx';
+import Lightbox from '../../../../common/Lightbox.jsx';
 
 import { mg } from '../../../../common/mediaQueries.js';
 
@@ -40,7 +40,6 @@ export default GalleryItem;
 
 const GalleryItemStyled = styled.div`
     position: relative;
-
     margin: 5px;
 
     @media ${mg.phone} {
@@ -83,6 +82,15 @@ const GalleryItemStyled = styled.div`
         padding: 10px;
         font-size: 15px;
         text-align: left;
+    }
+
+    .Lightbox {
+        img {
+            max-width: 30%;
+        }
+        h3 {
+            color: skyblue;
+        }
     }
 
 `;
