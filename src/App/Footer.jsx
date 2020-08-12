@@ -6,9 +6,7 @@ const Footer = () => {
     
     return (
         <FooterStyled>
-            <div className='nested-wrapper'>
                 COPYRIGHT 2020 | All RIGHT RESERVED
-            </div>
         </FooterStyled>
     )
 }

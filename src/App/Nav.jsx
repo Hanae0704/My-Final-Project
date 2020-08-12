@@ -15,12 +15,10 @@ const Nav = () => {
     const [showMenu, showMenuSet] = useState(false);
 
     const toggleMenu = () => {
-        console.log("You clicked the hamburger", showMenu);
         showMenuSet(!showMenu);
     }
 
     useEffect(()=> {
-        console.log("I Have mounted");
 
         const handleWindowSizeChange = () => {
             const isItMobile = window.matchMedia(`(max-width: 499px)`);
@@ -41,7 +39,6 @@ const Nav = () => {
 
 return (
 <NavStyled>
-<div className='nested-wrapper'>
     <div className="hamburger"
              onClick={ toggleMenu }
         >
@@ -57,7 +54,6 @@ return (
         <NavLink to="/contact">CONTACT</NavLink> 
         </div>
         }
-</div>
 </NavStyled>
 )
 

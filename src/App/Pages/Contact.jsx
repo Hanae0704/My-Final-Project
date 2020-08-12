@@ -30,6 +30,7 @@ const ContactStyled = styled.div`
     
     .nested-wrapper {
     display: flex;
+    
     }
 
     .column {

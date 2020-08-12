@@ -30,8 +30,8 @@ const AppStyled = styled.div`
     width: 100%;
     margin: auto;
 
-    .nested-wrapper {
+    /* .nested-wrapper {
     max-width:1200px;
     margin: auto;
-    }
+    } */
 `;
