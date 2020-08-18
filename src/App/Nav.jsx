@@ -49,9 +49,9 @@ return (
 
         <div className="links">
         <NavLink to="/"exact>HOME</NavLink>
-        <NavLink to="/appointment">APPOINTMENT</NavLink>
-        <NavLink to="/services">SERVICES</NavLink>
-        <NavLink to="/contact">CONTACT</NavLink> 
+        <NavLink to="/appointment" class='leftline'>APPOINTMENT</NavLink>
+        <NavLink to="/services" class='leftline'>SERVICES</NavLink>
+        <NavLink to="/contact" class='leftline'>CONTACT</NavLink> 
         </div>
         }
 </NavStyled>
@@ -63,7 +63,12 @@ export default Nav;
 
 const NavStyled = styled.nav`
 
-       
+        .leftline {
+            border-left: solid 1px white;
+            padding-left: 15px;
+        }
+
+        margin-top: 20px;
 
         @media ${mg.tablet} {
             /*width: 100px;*/
@@ -87,9 +92,7 @@ const NavStyled = styled.nav`
         width: 35px;
         height: auto;
         }
-
-        display: block;
-
+        
         @media ${mg.phone} {
             display: none;
         }
@@ -104,14 +107,12 @@ const NavStyled = styled.nav`
         font-size: 15px;
         color: white;
 
+        text-decoration: none;
+
         text-align: center;
         line-height: 10px;
-        
-        vertical-align: bottom;
 
-        width: 120px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-left: 15px;
 
         @media ${mg.phone} {
             font-size: 20px;
@@ -126,7 +127,10 @@ const NavStyled = styled.nav`
         }
 
         &:hover {
-            background-color: lightblue;
+            text-decoration: underline;
+            /* background-color: lightblue;
+            border-radius: 10px 10px 10px 10px;
+            padding: 5px; */
         }
 
         /* &.active {

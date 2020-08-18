@@ -17,19 +17,16 @@ const Header = () => {
             <div className="left-container">
             <div className='logo'><FontAwesomeIcon icon={ faPaw }/></div>
             <div className='company-name'>Blue Pooch</div>
-            <Nav/>
             </div>
-            
+            <Nav/>
         </HeaderStyled>
     )
 }
 export default Header;
 
-
 const HeaderStyled = styled.header`
 
 color: white;
-
 padding: 20px 0px 0px 10px;
 
 .company-name {
@@ -40,26 +37,31 @@ padding: 20px 0px 0px 10px;
     }
 
 .left-container {
-
     text-align: center; 
     
     @media ${mg.tablet} {
         display: flex;
-        justify-content: center;  
+        text-align: left; 
+        padding-left: 30px;
     }   
-
-    @media ${mg.desktop} {
-        display: flex;
-        justify-content: center;  
-    }
 }
 
 .logo {
     font-size: 28px;
-
     @media ${mg.phone} {
-           margin-right: 10px; 
+        margin-right: 10px; 
     }   
+}
+
+nav {
+    text-align: center;
+
+    @media ${mg.tablet} {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: -25px;
+    max-width: 100%;
+    }
 }
 
 `;

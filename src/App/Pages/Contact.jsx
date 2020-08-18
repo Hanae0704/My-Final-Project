@@ -27,10 +27,11 @@ const Contact = () => {
 export default Contact;
 
 const ContactStyled = styled.div`
+
+    padding: 20px 0px 0px 0px;
     
     .nested-wrapper {
     display: flex;
-    
     }
 
     .column {
