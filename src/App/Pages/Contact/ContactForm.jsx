@@ -31,6 +31,17 @@ const formFields = {
             message: '',
         }
     },
+    subjectField: {
+        id: 'userSubject',
+        label: 'Subject',
+        inputType: 'subject',
+        value: '',
+        validate: {
+            required: true,
+            valid: true,
+            message: '',
+        }
+    },
     messageField: {
         id: 'userMessage',
         label: 'Message',
@@ -47,6 +58,7 @@ const ContactForm = () => {
 
     const[userName, userNameUpdate] = useState(formFields.nameField);
     const[userEmail, userEmailUpdate] = useState(formFields.emailField);
+    const[userSubject, userSubjectUpdate] = useState(formFields.subjectField);
     const[userMessage, userMessageUpdate] = useState(formFields.messageField);
 
     const handleOnChange = (event, formField) => {
@@ -76,6 +88,9 @@ const ContactForm = () => {
         if (formField.id === 'userEmail'){
             userEmailUpdate(newField);
         }
+        if (formField.id === 'userSubject'){
+            userSubjectUpdate(newField);
+        }
         if (formField.id === 'userMessage'){
             userMessageUpdate(newField);
         }
@@ -89,6 +104,7 @@ const ContactForm = () => {
         const postData = {
             userName: userName,
             userEmail: userEmail,
+            userSubject: userSubject,
             userMessage: userMessage,
         }
 
@@ -107,6 +123,9 @@ const ContactForm = () => {
                     formField={ userEmail }    
                     onChange={ handleOnChange } />
                 <FormGroup 
+                    formField={ userSubject }    
+                    onChange={ handleOnChange } />
+                <FormGroup 
                     formField={ userMessage }  
                     onChange={ handleOnChange } />
                     <Button type='submit'>Send Email</Button>
@@ -118,7 +137,10 @@ const ContactForm = () => {
 export default ContactForm;
 
 const ContactFormStyled = styled.div`
-
+  
+  .FormGroup {
+    width: 97%;
     text-align: left;
-    
+    color: gray;
+  }
 `;

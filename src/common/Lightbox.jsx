@@ -1,17 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mg } from './mediaQueries.js';
 
-const Lightbox = ({hideAction, show=false, children}) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWindowClose, } from '@fortawesome/free-solid-svg-icons';
+
+const Lightbox = ({hideAction, show=false, children, width=300 }) => {
 
     const handleHide = () => {
         hideAction();
+    }
+
+    const stopBubbleUp = (event) => { 
+        event.stopPropagation();
     }
 
     return (
         show &&
         <LightboxStyled className='Lightbox'
         onClick={handleHide}>
-            <div className="light">
+        {/* lightWidth={width} */}
+
+            <div className="light" onClick={ stopBubbleUp }>
+            <FontAwesomeIcon className="close" icon={ faWindowClose } onClick={handleHide}/>
             {children}
             </div>
         </LightboxStyled>
@@ -32,7 +43,7 @@ const LightboxStyled = styled.div`
     z-index: 1000;
 
     .light {
-        width: 500px;
+        width: 250px;
         padding: 20px;
         background-color: white;
 
@@ -42,8 +53,25 @@ const LightboxStyled = styled.div`
 
         transform: translate(-50%, -50%);
 
+        @media ${mg.phone} {
+            width: 400px;
+        }
+
+        @media ${mg.tablet} {
+            width: 500px;
+        }
+
     img {
         display: inline;
         }
+    }
+
+    .close {
+        font-size: 20px;
+        position: absolute;
+        right:3px; top:3px;
+
+        cursor: pointer;
+        color: skyblue;
     }
 `;

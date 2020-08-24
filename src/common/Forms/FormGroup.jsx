@@ -31,15 +31,24 @@ label {
 }
 
 .feedback {
+    font-size: 14px;
     color: red;
     margin: 5px 0px;
+
+    font-family: futura-pt, sans-serif;
+                font-weight: 300;
+                font-style: normal;
 }
 
 .Control {
     input, textarea {
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         padding: 5px;
+
+        font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
     }
 }
 

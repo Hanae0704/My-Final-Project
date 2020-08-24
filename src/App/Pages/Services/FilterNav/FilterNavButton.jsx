@@ -39,7 +39,7 @@ const FilterNavButtonStyled = styled.div`
     cursor: pointer;
 
     &:hover {
-        background-color: white;
+        background-color: #c7e8f3;
     }
 
     &.active {

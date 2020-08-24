@@ -23,5 +23,4 @@ const FilterNav = ( { services, currCategory, currCategorySet } ) => {
 export default FilterNav;
 
 const FilterNavStyled = styled.div`
-    margin-top: 30px;
 `;

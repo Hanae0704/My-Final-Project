@@ -27,7 +27,7 @@ export default Header;
 const HeaderStyled = styled.header`
 
 color: white;
-padding: 20px 0px 0px 10px;
+padding: 20px 0px 0px 0px;
 
 .company-name {
     font-size: 25px;
@@ -48,6 +48,7 @@ padding: 20px 0px 0px 10px;
 
 .logo {
     font-size: 28px;
+
     @media ${mg.phone} {
         margin-right: 10px; 
     }   

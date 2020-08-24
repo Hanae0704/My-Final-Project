@@ -20,7 +20,7 @@ const ButtonStyled = styled.button`
     background-color: skyblue;
     color: white;
     padding: 10px;
-    border: none;
+    border: solid 1px white;
     outline: none;
     border-radius: 5px;
 

@@ -15,7 +15,7 @@ return (
     <AppStyled className='App'>
         <BrowserRouter>
         <Header/>
-        <Main/>
+        <Main/> 
         <Footer/>
         </BrowserRouter>
     </AppStyled>

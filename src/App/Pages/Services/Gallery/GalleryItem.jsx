@@ -39,6 +39,7 @@ const GalleryItem = ({item}) => {
 export default GalleryItem;
 
 const GalleryItemStyled = styled.div`
+
     position: relative;
     margin: 5px;
 
@@ -54,6 +55,7 @@ const GalleryItemStyled = styled.div`
 
     img { display: block; 
         width: 150px;
+        cursor: pointer;
 
         @media ${mg.phone} {
         width: 230px;
